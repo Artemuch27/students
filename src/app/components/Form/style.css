@@ -1,0 +1,73 @@
+.main {
+  background: #fff;
+  top: 20%;
+  position: fixed;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 25px;
+  width: 50%;
+  min-width: 450px;
+  left: -1000px;
+}
+
+.active {
+  left: 25%;
+  transition: all ease-out 250ms;
+}
+
+.formControl {
+  position: relative;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.formControl label {
+  position: absolute;
+  bottom: 80%;
+  font-size: 12px;
+}
+
+.formControl select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.formControl input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 95%;
+}
+
+.formControl input:focus {
+  border-color: #333;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.footer .button {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  background: blue;
+  margin: 0 5px;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #000;
+  opacity: 0.5;
+}
